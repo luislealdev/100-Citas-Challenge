@@ -1,33 +1,43 @@
-body{
+body {
     margin: 5vh;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
 }
-.info{
+
+.info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: justify;
 }
-.info p{
+
+.info p {
     font-size: 3vh;
 }
-.info img{
+
+.info img {
     width: 100%;
 }
-.info li{
+
+.info li {
     font-size: 3vh;
 }
-.credits{
+
+.credits {
     background-color: black;
     border-radius: 2vh;
     text-align: center;
     margin-top: 5vh;
 }
-.credits p{
+
+.credits p {
     color: white;
 }
-.credits a{
+
+.credits a {
     text-decoration: none;
 }
-.dateGenerator{
+
+.dateGenerator {
     background-color: rgb(255, 114, 114);
     border-radius: 3vh;
     text-align: center;
@@ -36,13 +46,15 @@ body{
 }
 
 @media only screen and (max-width : 900px) {
-    .info{
+    .info {
         grid-template-columns: repeat(1, 1fr);
     }
-    .info p{
+
+    .info p {
         font-size: 2vh;
     }
-    .info li{
+
+    .info li {
         font-size: 2vh;
     }
-    }
+}
