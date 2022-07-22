@@ -12,12 +12,18 @@ body{
 .info img{
     width: 100%;
 }
+.info li{
+    font-size: 3vh;
+}
 
 @media only screen and (max-width : 900px) {
     .info{
         grid-template-columns: repeat(1, 1fr);
     }
     .info p{
+        font-size: 2vh;
+    }
+    .info li{
         font-size: 2vh;
     }
     }
