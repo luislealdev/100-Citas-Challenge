@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import loveInTheAir from "./assets/img/loveInTheAir.png";
 import { ideas } from "./assets/ideas";
 
 export const App = () => {
+
+  const [randomDate, setRandomDate] = useState("");
+
+  const handleButtonClick = () => {
+    const randomNumber = Math.round(Math.random()*100);
+    setRandomDate(ideas[randomNumber]);
+  }
+  
+
   return (
     <>
       <div className="info">
@@ -16,6 +25,12 @@ export const App = () => {
             challenge que se ha viralizado en tiktok de 100 CITAS CHALLENGE.
           </p>
           <img src={loveInTheAir} alt="citas challenge" />
+
+          <div className="dateGenerator">
+            <h5>Genera una cita automáticamente</h5>
+            <p>{randomDate}</p>
+            <button className="btn btn-danger" onClick={handleButtonClick}>Generar</button>
+          </div>
 
           <ol>
             {ideas.map((idea) => (
