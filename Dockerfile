@@ -8,7 +8,7 @@ RUN npm install -g pnpm
 
 RUN pnpm install
 
-RUN pnpm run build
+RUN pnpm run dev
 
 EXPOSE 3000
 
